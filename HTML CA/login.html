@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Now</title>
+    <link rel="stylesheet" href="formm.css">
+    <script src="web.js"></script>
+
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>WELCOME TO BHAAVANA</h2>
+      <form name="myform" onsubmit="return validateform()">
+        <p>
+          <label>Username <input type="text" name="username" placeholder="eg: Kriti" required/></label>
+        </p>
+        <p>
+          <label>Password <input name="password" type="password" placeholder="must contain 8 char..." minlength="8"/></label>
+        </p>
+        
+  
+        
+        <p>
+          <button type="submit">login</button>
+        </p>
+      </form>
+    </div>
+    <a href="/hello.html"><p>Back to Home</p></a>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Now</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="web.js"></script>
+
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>BOOK OUR SERVCE</h2>
+      <form name="myform" onsubmit="return validateform()">
+        <p>
+          <label>Username <input type="text" name="username" placeholder="eg: Kriti" required/></label>
+        </p>
+        <p>
+          <label>Password <input name="password" type="password" placeholder="must contain 8 char..." minlength="8"/></label>
+        </p>
+        <label>
+          Select Your Age: <input type="radio" name="gender" id="" /> less than 20 years
+        </label>
+        <label> <input type="radio" name="gender" id="" /> more than 20 years and less than 45 years</label>
+        <label> <input type="radio" name="gender" id="" /> more than 45 years</label>
+        
+          <p style="font-weight: 700; text-decoration: underline"></p>
+            Your Current Situation
+          </p>
+          <ul>
+            <li>
+              <label><input type="checkbox" />Disturbance facing mentally</label>
+            </li>
+            <li>
+              <label><input type="checkbox">Disturbance facing physically</label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> Disturbance facing both mentally & physically</label>
+            </li>
+          
+        </ul>
+  
+        <p>
+          <select name="service">
+            <option selected="true" disabled>Select serv...</option>
+            <option value="option 1">Depression/Stress/Anxitey Therapy</option>
+            <option value="option 2">Relationship/Parenting & Family Therapy/Sexual wellness</option>
+            <option value="option 3">Addiction/Eating-disorder Therapy</option>
+            <option value="option 4">Past Memories/Personality Enhancement/Behavioral Therapy</option>
+            <option value="option 5">Others</option>
+          </select>
+        </p>
+  
+        <label>
+          <textarea
+            name="feedback"
+            cols="20"
+            rows="5"
+            placeholder="Your Major Concern"
+          ></textarea>
+        </label>
+  
+        <p>
+          <button type="submit">Submit</button>
+        </p>
+      </form>
+    </div>
+    <a href="/hello.html"><p>Back to Home</p></a>
+  </body>
+</html>
